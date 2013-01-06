@@ -1,0 +1,35 @@
+Ligature Story-Telling Software 1.5 ChangeLog
+http://www.desiquintans.com/ligature
+http://www.desiquintans.com/ligature-sts/manual
+____________________________________________
+
+New to 1.5 (in order of world-rockingness):
+	- 	You can now hide text from the parser! Wrapping a block of text with (!))) ... (!)))
+		(that's an opening bracket, a bang, and three closing brackets) will tell Ligature
+		not to scan it for nouns, and not to autolink inside the excluded block. You can use
+		this functionality to further protect HTML, or to add additional content like blog
+		posts or credits or whatevs.
+	-	Next and Previous navigation links have been added. You'll need to replace your
+		control.php file and start using {PREV} and {NEXT} links in your story.htm template.
+	-	The Table of Contents page (toc.php) now has a template tag option to sort stories
+		by name (default) or by most recent.
+	-	Display Name and Biography options were removed. New installations will not create
+		them, and existing isntallations cannot access them. It was kind of useless, since
+		Ligature is a single-user application and users often put those details on a
+		separate page.
+	-	The autolink handler now uses the nounlist that is on your server, not the one that
+		is on mine. Whoops! You will be able to add or remove things to your list and have
+		it actually do something.
+	-	Autolink now does better when finding the target nouns to turn into links. Previously
+		some nouns were missed if they occured at the start or end of a list.
+	-	Appropriate form fields (Login and Add Noun, for example) now autofocus so you can
+		start typing immediately.
+	-	Autolink no longer looks for words after a forward slash (since this is probably a
+		URL).
+	-	Index page of Admin section now displays the site name (set with the meta-
+		information in Preferences), which is useful if you run several installations of Ligature
+		on one server.
+	-	RSS feed now presents day of month correctly.
+	-	Bug Report form now gives the right email subject line. Embarrassing.
+	-	Some Preferences page options clarified.
+	-	Exclude tag code (!)) added to The Punctuator.

@@ -1,0 +1,84 @@
+/* STRUCTURAL CSS */
+BODY {
+	text-align: center;
+	font-family: Georgia, Rockwell, Garamond, Serif;
+	line-height: 1.3em;
+	color: #333;
+	font-size: 0.8em;
+	margin: auto;
+	padding: auto;
+	background-image: url(bg.jpg)}
+	
+#pagetitle {
+	margin-top: -5px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	text-align: center;}
+	
+#body {
+	margin: 35px auto auto auto;
+	padding: 30px;
+	padding-bottom: 200px;
+	width: 500px;
+	border: 1px solid #5F5F5F;
+	border-bottom: none;
+	text-align: justify;
+	background-color: #FCFCFC;}
+
+#date {
+	font-style: italic;
+	font-size: 0.9em;}
+
+#brain {
+	margin-top: -180px;}
+
+#random {
+	margin-top: 4em;
+	text-align: center;
+	font-size: 0.9em;
+	font-style: italic;}
+		
+#credits {
+	margin-top: -20px;
+	padding-bottom: 10px;
+	font-family: Verdana, Geneva, Helvetica, Sans-Serif;
+	font-size: 9px;
+	line-height: 1.1em;
+	font-weight: bold;}
+
+/* Object formatting */
+pre {
+	color: black;
+	text-indent: 0px;}
+	
+#body P {
+    	text-indent: 2em;}
+
+#body P.talking {
+    	text-indent: 0em;}
+    	
+#body P[align="center"] {
+    	text-indent: 0em;}
+    	
+blockquote {
+    	font-style: normal;
+    	text-indent: -0.4em;}
+
+/* Links */
+a[href^="http:"], a[href^="www."] {
+	background: transparent url('http://www.desiquintans.com/pics/ext.gif') 100% 50% no-repeat;
+	padding-right: 10px;}
+a[href^="http://desiquintans.com"], a[href^="http://www.desiquintans.com"] {
+	background: inherit;
+	padding-right: 0px;}
+A, A:LINK, A:ACTIVE {
+	color: #37567B;
+	text-decoration: none;}
+A:VISITED {
+	color: #C35D47;
+	text-decoration: none;}
+A:HOVER {
+	color: #778899;
+	text-decoration: underline;}
+A IMG, IMG {
+	border: 1px solid #888488;}
